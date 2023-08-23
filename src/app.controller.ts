@@ -13,7 +13,10 @@ export class AppController {
   }
 
   @Post()
-  createUser(@Body() dto: CreateUserDto | CreateUserExtraDto, @Query() type: string) {
+  async createUser(
+    @Body()
+    dto: CreateUserDto | CreateUserExtraDto
+  ) {
     if ('school' in dto) {
       console.log("CreateUserExtraDto", dto); // dto 타입: CreateUserExtraDto
       let specificDto: CreateUserExtraDto = dto as CreateUserExtraDto;
