@@ -1,8 +1,6 @@
-import { IsString, MinLength, MaxLength, IsNumber, IsEmail, Matches, IsNotEmpty } from "class-validator";
+import { IsString, MinLength, MaxLength, IsEmail, Matches, IsNotEmpty } from "class-validator";
 
 export class CreateUserExtraDto {
-    id: number;
-  
     @IsString()
     @MinLength(1)
     @MaxLength(20)
