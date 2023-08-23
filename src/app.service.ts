@@ -10,12 +10,12 @@ export class AppService {
 
 
   testCreateUserDto(dto: CreateUserDto) {
-    console.log(dto, typeof dto);
+    // console.log(dto);
     return;
   }
 
   testCreateUserExtraDto(dto: CreateUserExtraDto) {
-    console.log(dto, typeof dto);
+    // console.log(dto);
     return;
   }
 }
